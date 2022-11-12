@@ -1,0 +1,96 @@
+.invalid-tooltip {
+    width: fit-content;
+    display: flex !important;
+    top: 80%;
+    right: 25px;
+    font-size: 70%;
+    position: initial;
+    margin-left: auto !important;
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+/* ReEscritorio */
+@media only screen and (min-width: 1200px) {
+    .formUser {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .img {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 0;
+    }
+
+    .titulo {
+        margin-top: 1rem !important;
+    }
+}
+
+/* HD */
+@media only screen and (max-width: 1199px) and (min-width: 720px) {
+    .formUser {
+        display: flex;
+        justify-content: center;
+        padding-top: 40%;
+    }
+}
+
+/* QHD*/
+@media only screen and (max-width: 719px) and (min-width: 540px) {
+    .formUser {
+        display: flex;
+        justify-content: center;
+        padding-top: 25%;
+    }
+}
+
+/* SD */
+@media only screen and (max-width: 539px) and (min-width: 480px) {
+    .formUser {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        margin-bottom: 3.5rem !important;
+    }
+
+    .img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 0;
+    }
+
+    .titulo {
+        margin-top: 1rem !important;
+    }
+
+    #divForm {
+        margin-top: 1rem !important;
+    }
+}
+
+/* XSD */
+@media only screen and (max-width: 479px) and (min-width: 360px) {
+    .formUser {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 0;
+    }
+
+    .titulo {
+        margin-top: 1rem !important;
+    }
+
+    #divForm {
+        margin-top: 1rem !important;
+    }
+}

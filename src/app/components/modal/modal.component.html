@@ -1,0 +1,9 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{modalTitulo}}​​​</h4>
+  </div>
+  <div class="modal-body">
+    <p [innerHTML]="modalMensaje"></p>
+  </div>
+  <div class="modal-footer">
+    <button id="modal-btn-cancelar-yes" (click)="sendYes()" type="button" class="btn btn-lg btn-success">{{modalSi}}</button>
+  </div>

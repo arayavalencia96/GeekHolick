@@ -1,0 +1,73 @@
+<div class="formUser">
+  <div>
+    <div class="d-flex justify-content-center">
+      <img
+        src="../../../assets/icon.svg"
+        class="mb-1 img"
+        width="200"
+        height="150"
+        alt="icon"
+      />
+    </div>
+    <div class="d-flex justify-content-center mt-5 titulo">
+      <h3>{{ titulo }}</h3>
+    </div>
+    <div id="divForm" class="d-flex justify-content-center mt-3">
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="mw-75">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            formControlName="email"
+            aria-describedby="email"
+          />
+          <div id="emailHelp" class="form-text">
+            Nunca compartiremos tu email con nadie.
+          </div>
+        </div>
+        <div
+          *ngIf="
+            getForm.email?.invalid &&
+            (getForm.email?.dirty || getForm.email?.touched)
+          "
+          class="invalid-tooltip mt-3"
+        >
+          <ng-container *ngIf="getForm.email?.errors.required">
+            Debe llenar este campo
+          </ng-container>
+        </div>
+        <div class="mb-3">
+          <label for="pass" class="form-label">Password</label>
+          <input
+            type="password"
+            formControlName="pass"
+            class="form-control"
+            id="pass"
+          />
+        </div>
+        <div
+          *ngIf="
+            getForm.pass?.invalid &&
+            (getForm.pass?.dirty || getForm.pass?.touched)
+          "
+          class="invalid-tooltip mt-3"
+        >
+          <ng-container *ngIf="getForm.pass?.errors.required">
+            Debe llenar este campo
+          </ng-container>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button
+            type="submit"
+            [disabled]="loginForm.invalid"
+            class="btn btn-primary"
+          >
+            Iniciar Sesión
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

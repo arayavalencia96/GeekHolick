@@ -1,0 +1,109 @@
+<div class="container mt-4 containerTabla">
+  <div class="card">
+    <div class="card-body">
+
+      <div class="titulo">
+        <span class="h3">Lista de empleados</span>
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end btnAdd">
+        <button
+          class="btn btn-dark btn-md float-right"
+          routerLink="/create-employee"
+        >
+          Agregar
+        </button>
+      </div>
+
+      <div class="noData">
+        <h5 *ngIf="employees.length == 0">
+          No hay datos para mostrar. Agregar uno para ver la tabla
+        </h5>
+      </div>
+
+      <div class="tabla">
+        <table
+          *ngIf="employees.length > 0"
+          class="table-responsive table-light table-striped mt-4"
+        >
+          <thead>
+            <tr class="text-center justify-content-around">
+              <th
+                class="col-2 col-md-1 col-sm-1 col-xs-1 abs-center"
+                scope="col"
+              >
+                Documento
+              </th>
+              <th
+                class="col-4 col-md-1 col-sm-1 col-xs-1 abs-center"
+                scope="col"
+              >
+                Nombre
+              </th>
+              <th class="col-1 col-md-1 col-sm-1 abs-center" scope="col">
+                Apellido
+              </th>
+              <th class="col-1 col-md-1 col-sm-1 abs-center" scope="col">
+                Sector
+              </th>
+              <th class="col-1 col-md-1 col-sm-1 abs-center" scope="col">
+                Salario
+              </th>
+              <th class="col-1 col-md-1 col-sm-1 abs-center" scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="let employee of employees"
+              class="text-center font-weight-medium justify-content-around"
+            >
+              <th class="my-1 col-2 col-md-2 col-sm-1 col-xs-1 abs-center">
+                {{ employee.doc }}
+              </th>
+              <td class="my-1 col-4 col-md-2 col-sm-1 col-xs-1 abs-center">
+                {{ employee.name }}
+              </td>
+              <td class="my-1 col-2 col-md-2 col-sm-1 abs-center">
+                {{ employee.surname }}
+              </td>
+              <td class="my-1 col-1 col-md-2 col-sm-1 abs-center">
+                {{ employee.sector }}
+              </td>
+              <td class="my-1 col-1 col-md-2 col-sm-1 abs-center">
+                {{ employee.salary | currency }}
+              </td>
+              <td class="my-1 col-1 col-md-2 col-sm-1 abs-center d-block">
+                <div class="d-flex">
+                  <button
+                    [routerLink]="['/edit-employee/', employee.id]"
+                    class="btn btn-outline-warning btn-sm me-md-2 btns"
+                  >
+                    <img
+                      src="../../../assets/modificar.svg"
+                      class="mb-1 img"
+                      width="15"
+                      height="15"
+                      alt="icon"
+                    />
+                  </button>
+                  <button
+                    (click)="deleteEmployee(employee.id)"
+                    class="btn btn-outline-danger btn-sm me-md-2"
+                  >
+                    <img
+                      src="../../../assets/trash.svg"
+                      class="mb-1 img"
+                      width="15"
+                      height="15"
+                      alt="icon"
+                    />
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

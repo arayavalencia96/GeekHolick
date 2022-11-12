@@ -1,0 +1,110 @@
+/* ReEscritorio */
+.titulo {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+    text-align: center;
+}
+
+.imagen {
+    margin-bottom: 4.5rem;
+    width: 50% !important;
+    height: 50% !important;
+}
+
+.parrafo {
+    margin-left: 2.5rem !important;
+    margin-right: 2.5rem !important;
+}
+
+/* HD */
+@media only screen and (max-width: 1279px) and (min-width: 720px) {
+    .titulo {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+        margin-top: 5.5rem !important;
+        margin-bottom: 4.5rem !important;
+        text-align: center !important;
+    }
+
+    .imagen {
+        margin-bottom: 4.5rem !important;
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .parrafo {
+        margin-left: 2.5rem !important;
+        margin-right: 2.5rem !important;
+    }
+
+}
+
+/* QHD*/
+@media only screen and (max-width: 719px) and (min-width: 540px) {
+    .titulo {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+        margin-top: 4.5rem !important;
+        margin-bottom: 4.5rem !important;
+        text-align: center !important;
+    }
+
+    .imagen {
+        margin-bottom: 4.5rem !important;
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .parrafo {
+        margin-left: 2.5rem !important;
+        margin-right: 2.5rem !important;
+    }
+}
+
+/* SD */
+@media only screen and (max-width: 539px) and (min-width: 480px) {
+    .titulo {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+        text-align: center !important;
+    }
+
+    .imagen {
+        margin-bottom: 4.5rem !important;
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .parrafo {
+        margin-left: 2.5rem !important;
+        margin-right: 2.5rem !important;
+        margin-bottom: 3.5rem;
+    }
+}
+
+/* XSD */
+@media only screen and (max-width: 479px) and (min-width: 360px) {
+    .titulo {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+        text-align: center;
+    }
+
+    .imagen {
+        margin-bottom: 2.5rem !important;
+        width: 80% !important;
+        height: 80% !important;
+    }
+
+    .parrafo {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+        margin-bottom: 3.5rem;
+    }
+}

@@ -1,0 +1,56 @@
+.color {
+    color: red;
+}
+/* ReEscritorio */
+@media only screen and (min-width: 1199px) {
+}
+
+/* HD */
+@media only screen and (max-width: 1279px) and (min-width: 720px) {
+    .containerForm {
+        margin-top: 15%;
+    }
+}
+
+/* QHD*/
+@media only screen and (max-width: 719px) and (min-width: 540px) {
+    .containerForm {
+        margin-top: 15%;
+    }
+    .botones {
+        display: flex;
+    }
+    .btnAdd {
+        justify-content: flex-start;
+    }
+    .btnVolver {
+        justify-content: flex-end;
+    }
+}
+
+/* SD */
+@media only screen and (max-width: 539px) and (min-width: 480px) {
+    .containerForm {
+        margin-bottom: 10%;
+    }
+    .botones {
+        display: flex;
+    }
+    .btnAdd {
+        justify-content: flex-start;
+    }
+    .btnVolver {
+        justify-content: flex-end;
+    }
+}
+
+/* XSD */
+@media only screen and (max-width: 479px) and (min-width: 360px) {
+    .containerForm {
+        margin-bottom: 10%;
+    }
+    .botones {
+        display: flex;
+        justify-content: center;
+    }
+}

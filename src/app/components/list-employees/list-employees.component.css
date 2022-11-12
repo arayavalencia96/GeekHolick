@@ -1,0 +1,165 @@
+/* ReEscritorio */
+@media only screen and (min-width: 1200px) {
+    .titulo {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .noData {
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .tabla {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .containerTabla {
+        margin-top: 5% !important;
+    }
+
+    .btns {
+        margin-right: 1.5rem !important;
+    }
+}
+
+/* HD */
+@media only screen and (max-width: 1199px) and (min-width: 720px) {
+    .titulo {
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .btnAdd {
+        width: 20%;
+        margin-left: 1.5rem;
+    }
+
+    .noData {
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .tabla {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .containerTabla {
+        margin-top: 30% !important;
+    }
+
+    .btns {
+        margin-right: 1.5rem !important;
+    }
+}
+
+/* QHD*/
+@media only screen and (max-width: 719px) and (min-width: 540px) {
+    .titulo {
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .btnAdd {
+        width: 20%;
+        margin-left: 1.5rem;
+    }
+
+    .noData {
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .tabla {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .containerTabla {
+        margin-top: 20% !important;
+    }
+
+    .btns {
+        margin-right: 1.5rem !important;
+    }
+}
+
+/* SD */
+@media only screen and (max-width: 539px) and (min-width: 480px) {
+    .titulo {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .btnAdd {
+        width: 20%;
+        margin-left: 0.5rem;
+    }
+
+    .noData {
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .tabla {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .containerTabla {
+        margin-top: 10% !important;
+        margin-bottom: 20%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .btns {
+        margin-right: 1.5rem !important;
+    }
+}
+
+/* XSD */
+@media only screen and (max-width: 479px) and (min-width: 360px) {
+    .titulo {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .btnAdd {
+        width: 20%;
+        margin-left: 0.5rem;
+    }
+
+    .noData {
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .tabla {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .containerTabla {
+        margin-top: 10% !important;
+        margin-bottom: 20%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .btns {
+        margin-right: 1.5rem !important;
+    }
+}

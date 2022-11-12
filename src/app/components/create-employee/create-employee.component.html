@@ -1,0 +1,103 @@
+<div class="container pt-4 pb-4 containerForm">
+  <div class="col-lg-6 offset-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h3>{{ titulo }}</h3>
+        <span class="font-weight-bold color" *ngIf="submitted && createEmployee.invalid"
+          >TODOS LOS CAMPOS SON OBLIGATORIOS</span
+        >
+        <form [formGroup]="createEmployee" (ngSubmit)="addOrEditEmployee()">
+          <div class="form-group row mb-4 mt-4 d-flex justify-content-center">
+            <div class="col-sm-9">
+              <input
+                type="number"
+                class="form-control text-center"
+                id="documentoId"
+                formControlName="doc"
+                placeholder="Documento sin puntos"
+              />
+            </div>
+          </div>
+          <div class="form-group row mb-4 mt-4 d-flex justify-content-center">
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control text-center"
+                id="nombreId"
+                formControlName="name"
+                placeholder="Nombre"
+              />
+            </div>
+          </div>
+          <div class="form-group row mb-4 mt-4 d-flex justify-content-center">
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control text-center"
+                id="apellidoId"
+                formControlName="surname"
+                placeholder="Apellido"
+              />
+            </div>
+          </div>
+          <div class="form-group row mb-4 mt-4 d-flex justify-content-center">
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control text-center"
+                id="sectorId"
+                formControlName="sector"
+                placeholder="Sector"
+              />
+            </div>
+          </div>
+          <div class="form-group row mb-4 mt-4 d-flex justify-content-center">
+            <div class="col-sm-9">
+              <input
+                type="number"
+                class="form-control text-center"
+                id="salarioId"
+                formControlName="salary"
+                placeholder="Sin puntos ni símbolos"
+                placeholder="Salario"
+              />
+            </div>
+          </div>
+          <div class="botones">
+            <div class="col-sm-3 btn center botones btnVolver">
+              <button
+                class="btn btn-outline-info btn-lg"
+                routerLink="/list-employees"
+              >
+                <img
+                  src="../../../assets/volver.svg"
+                  class="mb-1 img"
+                  width="25"
+                  height="25"
+                  alt="icon"
+                />
+              </button>
+            </div>
+            <div class="col-sm-3 btn center botones btnAdd">
+              <button type="submit" class="btn btn-outline-success btn-lg">
+                <span
+                  *ngIf="loading"
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span
+                ><img
+                  src="../../../assets/add.svg"
+                  class="mb-1 img"
+                  width="25"
+                  height="25"
+                  alt="icon"
+                />
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
