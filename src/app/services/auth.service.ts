@@ -44,6 +44,7 @@ export class AuthService {
         email,
         pass
       );
+      this.verificationEmail();
     } catch (error) {
       console.log(error);
     }
@@ -66,6 +67,22 @@ export class AuthService {
     componente.modalTitulo = titulo;
     componente.modalMensaje = mensaje;
     componente.modalSi = 'Aceptar';
+  }
+
+  async resetPass(email: string): Promise<void> {
+    try {
+      return this.afAuth.sendPasswordResetEmail(email);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async verificationEmail(): Promise<void> {
+    try {
+      return (await this.afAuth.currentUser)?.sendEmailVerification();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
 }

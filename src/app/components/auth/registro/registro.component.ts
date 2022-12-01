@@ -35,7 +35,7 @@ export class RegistroComponent implements OnInit {
     const { email, pass } = this.RegisterForm.value;
     try {
       const user = await this.authService.register(email, pass);
-      this.router.navigate(['/login']);
+      this.router.navigate(['/send-email']);
     } catch (error) {
       console.log(error);
     }

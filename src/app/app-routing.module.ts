@@ -6,6 +6,8 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegistroComponent } from './components/auth/registro/registro.component';
 import { HomeComponent } from './components/home/home.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
+import { SendEmailComponent } from './components/auth/send-email/send-email.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch:'full'},
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'registrarse', component: RegistroComponent},
   {path: 'error', component: ErrorPageComponent},
+  {path: 'forgot-password', component: ForgotPasswordComponent},
+  {path: 'send-email', component: SendEmailComponent},
   {path: '**', redirectTo: 'error', pathMatch:'full'}
 ];
 

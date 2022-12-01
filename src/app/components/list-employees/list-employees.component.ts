@@ -10,6 +10,8 @@ import { EmployeeService } from 'src/app/services/employee.service';
   styleUrls: ['./list-employees.component.css']
 })
 export class ListEmployeesComponent implements OnInit {
+
+  filterEmployees = '';
   employees:any[]=[];
   constructor(private _employeeServices: EmployeeService,
               private toastr: ToastrService) { 

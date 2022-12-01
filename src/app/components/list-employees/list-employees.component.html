@@ -1,7 +1,6 @@
 <div class="container mt-4 containerTabla">
   <div class="card">
     <div class="card-body">
-
       <div class="titulo">
         <span class="h3">Lista de empleados</span>
       </div>
@@ -22,6 +21,13 @@
       </div>
 
       <div class="tabla">
+        <input
+          type="text"
+          class="form-control"
+          name="filterPost"
+          placeholder="Search..."
+          [(ngModel)]="filterEmployees"
+        />
         <table
           *ngIf="employees.length > 0"
           class="table-responsive table-light table-striped mt-4"
@@ -54,7 +60,7 @@
           </thead>
           <tbody>
             <tr
-              *ngFor="let employee of employees"
+              *ngFor="let employee of employees | filter : filterEmployees"
               class="text-center font-weight-medium justify-content-around"
             >
               <th class="my-1 col-2 col-md-2 col-sm-1 col-xs-1 abs-center">
